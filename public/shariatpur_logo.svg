@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@700;800;900&amp;family=Noto+Sans+Bengali:wght@700;800;900&amp;display=swap');
+      
+      .seal-font-top {
+        font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+        font-weight: 800;
+        font-size: 34px;
+        fill: #006A4E;
+        letter-spacing: 1.5px;
+      }
+
+      .seal-font-bottom {
+        font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+        font-weight: 800;
+        font-size: 34px;
+        fill: #006A4E;
+        letter-spacing: 1.5px;
+      }
+
+      .portal-text {
+        font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+        font-weight: 900;
+        font-size: 42px;
+        fill: #FFFFFF;
+        letter-spacing: 2px;
+      }
+    </style>
+
+    <!-- Arc for Top Bengali Text: "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার" -->
+    <path id="topTextArc" d="M 92,300 A 208,208 0 1,1 508,300" />
+    
+    <!-- Arc for Bottom Bengali Text: "শরীয়তপুর জেলা বাতায়ন" -->
+    <path id="bottomTextArc" d="M 508,300 A 208,208 0 0,1 92,300" />
+
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Outer Green Circle Border -->
+  <circle cx="300" cy="300" r="285" fill="#FFFFFF" stroke="#006A4E" stroke-width="18" />
+
+  <!-- Inner Thin Green Separator Ring -->
+  <circle cx="300" cy="300" r="222" fill="none" stroke="#006A4E" stroke-width="3" />
+
+  <!-- Central Red Circle -->
+  <circle cx="300" cy="300" r="186" fill="#D62828" stroke="#D62828" stroke-width="2" />
+
+  <!-- Left Star (Red) -->
+  <g transform="translate(108, 300) scale(1.1)">
+    <polygon points="0,-16 5,-4 17,-4 7,4 11,16 0,8 -11,16 -7,4 -17,-4 -5,-4" fill="#D62828" />
+  </g>
+
+  <!-- Right Star (Red) -->
+  <g transform="translate(492, 300) scale(1.1)">
+    <polygon points="0,-16 5,-4 17,-4 7,4 11,16 0,8 -11,16 -7,4 -17,-4 -5,-4" fill="#D62828" />
+  </g>
+
+  <!-- Circular Text 1: Top Arc "গণপ্রজাতন্ত্রী বাংলাদেশ সরকার" -->
+  <text class="seal-font-top">
+    <textPath href="#topTextArc" startOffset="50%" text-anchor="middle">
+      গণপ্রজাতন্ত্রী বাংলাদেশ সরকার
+    </textPath>
+  </text>
+
+  <!-- Circular Text 2: Bottom Arc "শরীয়তপুর জেলা বাতায়ন" -->
+  <text class="seal-font-bottom">
+    <textPath href="#bottomTextArc" startOffset="50%" text-anchor="middle">
+      শরীয়তপুর জেলা বাতায়ন
+    </textPath>
+  </text>
+
+  <!-- ==================== MAP OF BANGLADESH (Yellow) ==================== -->
+  <g transform="translate(0, -10)">
+    <!-- Map Path -->
+    <path d="
+      M 292,145 
+      C 298,142 305,150 312,156 
+      C 320,160 332,166 342,174 
+      C 350,180 358,188 368,198 
+      C 378,206 388,210 398,214 
+      C 402,220 396,228 388,232 
+      C 380,236 374,242 370,248 
+      C 368,255 372,262 378,268 
+      C 385,275 392,282 398,290 
+      C 404,298 412,308 416,318 
+      C 420,328 415,338 406,346 
+      C 398,352 390,344 386,334 
+      C 382,324 378,312 374,302 
+      C 370,295 365,290 358,288 
+      C 352,286 346,290 344,296 
+      C 342,304 340,314 336,324 
+      C 332,334 326,342 320,350 
+      C 316,358 310,368 302,376 
+      C 296,382 290,388 284,382 
+      C 278,376 276,368 280,360 
+      C 282,354 286,346 282,340 
+      C 278,334 270,332 264,336 
+      C 260,342 256,352 250,360 
+      C 246,366 240,372 234,366 
+      C 228,360 226,350 230,342 
+      C 234,334 240,326 244,318 
+      C 248,310 246,302 240,296 
+      C 234,290 226,288 220,292 
+      C 216,296 212,302 208,306 
+      C 202,308 198,304 196,298 
+      C 194,290 198,282 204,276 
+      C 210,270 216,264 218,256 
+      C 220,248 214,242 208,236 
+      C 204,228 208,220 214,214 
+      C 220,206 228,200 234,192 
+      C 240,184 244,176 250,168 
+      C 256,160 265,152 274,148 
+      C 282,144 288,146 292,145 Z
+    " fill="#FFDF00" stroke="#E2B800" stroke-width="1.5" />
+
+    <!-- Center Crest: Window Frame & Boat inside Map -->
+    <!-- Window Frame -->
+    <g transform="translate(268, 205)">
+      <!-- Outer Frame -->
+      <rect x="0" y="0" width="64" height="60" fill="#FFDF00" stroke="#854D0E" stroke-width="3" />
+      <rect x="6" y="6" width="52" height="48" fill="#FFDF00" stroke="#854D0E" stroke-width="2" />
+      <!-- Center Vertical Divider -->
+      <line x1="32" y1="6" x2="32" y2="54" stroke="#854D0E" stroke-width="2" />
+      <!-- Center Horizontal Divider -->
+      <line x1="6" y1="30" x2="58" y2="30" stroke="#854D0E" stroke-width="1.5" />
+
+      <!-- Left Open Shutter Flap -->
+      <path d="M 0,0 L -12,-8 L -12,68 L 0,60 Z" fill="#FFDF00" stroke="#854D0E" stroke-width="2.5" />
+      <line x1="-6" y1="-4" x2="-6" y2="64" stroke="#854D0E" stroke-width="1.5" />
+
+      <!-- Right Open Shutter Flap -->
+      <path d="M 64,0 L 76,-8 L 76,68 L 64,60 Z" fill="#FFDF00" stroke="#854D0E" stroke-width="2.5" />
+      <line x1="70" y1="-4" x2="70" y2="64" stroke="#854D0E" stroke-width="1.5" />
+    </g>
+
+    <!-- Traditional Boat (Nauka) underneath window -->
+    <g transform="translate(262, 280)">
+      <!-- Boat Canopy (Choi) -->
+      <path d="M 18,2 Q 38,-10 58,2 L 54,12 L 22,12 Z" fill="#FFDF00" stroke="#854D0E" stroke-width="2" />
+      <line x1="28" y1="2" x2="28" y2="12" stroke="#854D0E" stroke-width="1" />
+      <line x1="38" y1="-4" x2="38" y2="12" stroke="#854D0E" stroke-width="1" />
+      <line x1="48" y1="2" x2="48" y2="12" stroke="#854D0E" stroke-width="1" />
+
+      <!-- Boat Hull -->
+      <path d="M 2,12 Q 38,28 74,12 C 60,24 16,24 2,12 Z" fill="#FFDF00" stroke="#854D0E" stroke-width="2.5" />
+      <!-- Oar / Water Ripple -->
+      <path d="M -4,16 Q 38,26 80,16" stroke="#854D0E" stroke-width="2" fill="none" stroke-dasharray="4 2" />
+    </g>
+
+    <!-- Central Bottom Text: "পোর্টাল" -->
+    <text x="300" y="420" class="portal-text" text-anchor="middle">
+      পোর্টাল
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/shariatpur_logo.svg" />
+    <title>শরীয়তপুর নাগরিক সেবা । Smart Shariatpur Portal</title>
+    <script>
+      /* 
+       ================================================================================
+       📌 শরীয়তপুর জেলা বাতায়ন পোর্টাল - লোগো সেটিং (CUSTOM PORTAL LOGO CONFIG)
+       ================================================================================
+       আপনি আপনার Google Drive, ImgBB, PostImage বা যেকোনো ছবির লিংক নিচের কোটেশনের (" ") ভেতর বসাতে পারেন।
+       
+       উদাহরণ (Google Drive Link Example):
+       window.CUSTOM_PORTAL_LOGO_URL = "https://drive.google.com/file/d/1a2b3c4d5e6f7g8h9/view?usp=sharing";
+       
+       বা খালি রাখলে ("") স্বয়ংক্রিয়ভাবে ডিফল্ট পোর্টাল সিল/লোগো প্রদর্শিত হবে।
+       ================================================================================
+      */
+      window.CUSTOM_PORTAL_LOGO_URL = "https://i.postimg.cc/MGk5HTP9/IMG-0229.jpg";
+    </script>
+    <script>
+      // Global safety handler for third-party script errors (e.g. Tawk.to cross-origin scripts)
+      window.addEventListener('error', function(e) {
+        if (e && (e.message === 'Script error.' || (e.filename && !e.filename.includes(location.origin)))) {
+          // Prevent unhandled third-party script errors from crashing app
+          e.stopPropagation();
+          return true;
+        }
+      }, true);
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/6a74d66adc34ab1d459e7e97/1jvc6b4p3';
+    s1.charset='UTF-8';
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

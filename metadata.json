@@ -1,0 +1,6 @@
+{
+  "name": "Shariatpur Help Desk",
+  "description": "Comprehensive local emergency and information directory for Shariatpur District, Bangladesh. Access essential contacts for police, fire service, hospitals, pharmacies, transportation, and blood donors with offline support.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
